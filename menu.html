@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, select, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of Ice Cream</h1>
+    <ul>
+        <li>Vanilla</li>
+        <li>Chocolate</li>
+        <li>Strawberry</li>
+        <li>Mint Chocolate Chip</li>
+        <li>Cookie Dough</li>
+        <li>Rocky Road</li>
+        <li>Pistachio</li>
+        <li>Butter Pecan</li>
+    </ul>
+
+    <h2>Order Your Favorite Ice Cream</h2>
+    <form action="/submit_order" method="post">
+        <label for="ice-cream">Choose your ice cream:</label>
+        <select id="ice-cream" name="ice-cream">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="mint-chocolate-chip">Mint Chocolate Chip</option>
+            <option value="cookie-dough">Cookie Dough</option>
+            <option value="rocky-road">Rocky Road</option>
+            <option value="pistachio">Pistachio</option>
+            <option value="butter-pecan">Butter Pecan</option>
+        </select>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        
+	
+        <button type="submit">Order Now</button><br>
+
+	<div style="text-align:right; margin-top: 40px;"><a style="font-size:20px; background-color:blue; padding: 8px 25px 8px 25px; color:white;
+
+"href="https://www.icecream.com/">ice details</a></div>
+		
+
+    </form>
+</body>
+</html>
+
+
